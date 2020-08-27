@@ -1,4 +1,3 @@
-// cuando termine de cargar el documento poblamos la tabla
 document.addEventListener("DOMContentLoaded", function() {
   fetchData();
 });
