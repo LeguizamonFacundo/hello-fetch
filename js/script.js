@@ -1,3 +1,5 @@
+  
+// cuando termine de cargar el documento poblamos la tabla
 document.addEventListener("DOMContentLoaded", function() {
   fetchData();
 });
@@ -44,7 +46,7 @@ function fetchUser() {
   let id = document.getElementById('userID').value;
   // si el id no es un numero terminamos
   if (isNaN(id)) return;
-  fetch(`https://hello-database.herokuapp.com/api/user/${id}`)
+  fetch(`https://leguizamonfacundohellodb.herokuapp.com/api/user/${id}`)
     .then(res => res.json())
     .then(user => {
       let users = [user];  // populateTable usa un array de objetos como argumento
