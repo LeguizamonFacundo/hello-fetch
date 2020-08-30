@@ -58,7 +58,7 @@ function fetchUser() {
         newTBody.id = 'tbody';
         oldTBody.replaceWith(newTBody);
         // cargamos la fila
-        
+        populateTable(users);
         // actualizamos la UI
         document.getElementById('table').hidden = false;
         document.getElementById('nores').innerHTML = '';
